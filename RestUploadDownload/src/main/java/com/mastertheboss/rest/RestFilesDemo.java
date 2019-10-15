@@ -68,17 +68,6 @@ public class RestFilesDemo {
         return response.build();
     }
  
-    @GET
-    @Path("/download")
-    @Produces(MediaType.APPLICATION_OCTET_STREAM)
-    public Response downloadFileWithGet(@QueryParam("file") String file) {
- 
-        String path = System.getProperty("user.home") + File.separator + "uploads";
-        File fileDownload = new File(path + File.separator + file);
-        ResponseBuilder response = Response.ok((Object) file);
-        response.header("Content-Disposition", "attachment;filename=" + file);
-        return response.build();
-    }
  
     private String getFileName(MultivaluedMap<String, String> header) {
  
