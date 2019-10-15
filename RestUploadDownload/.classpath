@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
+	<classpathentry excluding="com/mastertheboss/rest/" kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -48,5 +48,7 @@
 	<classpathentry kind="lib" path="D:/jaxrs-ri/lib/jersey-media-sse.jar"/>
 	<classpathentry kind="lib" path="D:/jaxrs-ri/lib/jersey-server.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="src/main/java/com/mastertheboss/rest"/>
+	<classpathentry kind="lib" path="C:/Users/sisira.thomas/Downloads/resteasy-multipart-provider.jar/resteasy-multipart-provider.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
